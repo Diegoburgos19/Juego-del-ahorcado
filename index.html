@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="ahorcado.css">
+		<script src="ahorcado.js" defer></script>
+		
+		<title>AhorcadoGame</title>
+	</head>
+	<body>
+		<main>
+			<div id="logoAlura"> 
+				<img src="Vector_logo.png" alt="logo_alura"> </a>
+			</div>
+			<div id="mainDisplay" > 
+				<button id="iniciarJuego" class="blueButton iniciarJuego">Iniciar juego</button>
+				<button id="nuevaPalabra" class="greyButton nuevaPalabra">Agregar Nueva palabra</button>
+				<div id="saveCancelNewWord">
+					<input type="text"  id="inputFrase" class="inputBox"  placeholder="Ingrese nueva palabra"> 
+					<div id="adviceDiv"> <img src="./Vector_advice.png">  Máximo 8 letras sin números o caracteres especiales </div>
+					<div id="saveCancelBtn"> 
+						<button id="guardarRemplazarbtn" > Guardar y Reemplazar </button>
+						<button id="cancelarBtn"> Cancelar </button>
+					</div>
+				</div>
+				<div id="nuevoJuegoDiv">
+					<div id="ahorcadoDiv"> <img id= "imagen" src="./imagenesahorca/Img0.png" height="570px" width="750px"></div>
+					<span id="mensajeGanador"> Ganaste <br> Felicidades!! </span >
+					<span  id="mensajeDerrota"> Fin del juego!</span >
+					<div id="palabrasCorrectas"></div>
+					<div id="palabrasEquivocadas"></div>
+					<div id="nuevoDesistirDiv"> 
+						<button id="nuevoJuegoBtn"> Nuevo Juego  </button>
+						<button id="desistirBtn"> Desistir </button>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
